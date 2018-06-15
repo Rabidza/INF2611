@@ -28,6 +28,7 @@ class MyForm(QtGui.QMainWindow):
     def copymessage(self):
         self.ui.label.setText("Copying text")
 
+
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
     myapp = MyForm()
