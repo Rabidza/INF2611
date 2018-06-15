@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icon images">
+    <file>plus.ICO</file>
+    <file>divide.ICO</file>
+    <file>equal.ICO</file>
+    <file>minus.ICO</file>
+    <file>multiply.ICO</file>
+  </qresource>
+</RCC>
