@@ -110,4 +110,4 @@ venv.bak/
 assignments/
 
 # ignore settings file
-chapter12/createtable/settings.py
+chapter12/settings.py
