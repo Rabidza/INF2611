@@ -25,16 +25,11 @@ class MyForm(QtGui.QDialog):
         self.model.setEditStrategy(QtSql.QSqlTableModel.OnManualSubmit)
         self.model.select()
         self.ui.tableView.setModel(self.model)
-        QtCore.QObject.connect(self.ui.UpdateButton, QtCore.SIGNAL("clicked()"),
-                               self.UpdateRecords)
-        QtCore.QObject.connect(self.ui.CancelButton, QtCore.SIGNAL("clicked()"),
-                               self.CancelChanges)
-        QtCore.QObject.connect(self.ui.InsertButton, QtCore.SIGNAL("clicked()"),
-                               self.InsertRecords)
-        QtCore.QObject.connect(self.ui.DeleteButton, QtCore.SIGNAL("clicked()"),
-                               self.DeleteRecords)
-        QtCore.QObject.connect(self.ui.FilterButton, QtCore.SIGNAL("clicked()"),
-                               self.FilterRecords)
+        QtCore.QObject.connect(self.ui.UpdateButton, QtCore.SIGNAL('clicked()'), self.UpdateRecords)
+        QtCore.QObject.connect(self.ui.CancelButton, QtCore.SIGNAL('clicked()'), self.CancelChanges)
+        QtCore.QObject.connect(self.ui.InsertButton, QtCore.SIGNAL('clicked()'), self.InsertRecords)
+        QtCore.QObject.connect(self.ui.DeleteButton, QtCore.SIGNAL('clicked()'), self.DeleteRecords)
+        QtCore.QObject.connect(self.ui.FilterButton, QtCore.SIGNAL('clicked()'), self.FilterRecords)
 
     def UpdateRecords(self):
         self.model.submitAll()

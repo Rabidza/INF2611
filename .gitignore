@@ -111,3 +111,4 @@ assignments/
 
 # ignore settings file
 chapter12/settings.py
+tutorExample/settings.py
